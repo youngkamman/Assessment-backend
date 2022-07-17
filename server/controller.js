@@ -82,10 +82,10 @@ module.exports = {
           people[index].age = 0
           res.status(200).send(people)
       } else if (type === 'plus') {
-          people[index].age += 1
+          people[index].age++
           res.status(200).send(people)
       } else if (type === 'minus') {
-          people[index].age -= 1
+          people[index].age--
           res.status(200).send(people)
       } else {
           res.sendStatus(400)
